@@ -10,13 +10,14 @@
 	    <header>
 	    	<div id="page-banner">
 	    		<h1 class="title">Bookorama</h1>
-          <p>Books for Ninjas</p>
+          <a href="http://www.google.com"><p>Books for Ninjas</p></a>
           <form id="search-books">
             <input type="text" placeholder="Search books..." />
           </form>
 	    	</div>
 	    </header>
 	    <div id="book-list">
+	    	<div id="gizleGoster"></div>
 	    	<h2 class="title">Books to Read</h2>
 	    	<ul>
 	    		<li>
@@ -41,6 +42,21 @@
 	    	<input type="text" placeholder="Add a book..." />
 	    	<button>Add</button>
 	    </form>
+
+	    <div id="tabbed-content">
+	        <ul class="tabs">
+	          <li data-target="#about" class="active">About</li>
+	          <li data-target="#contact">Contact</li>
+	        </ul>
+	        <div class="tab panel active" id="about">
+	          <p>Content for about tab...</p>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+	        </div>
+	        <div class="tab panel" id="contact">
+	          <p>Content for contact tab...</p>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+	        </div>
+	    </div>
 
     </div>
     <script src="app.js"></script>
