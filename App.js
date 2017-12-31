@@ -2,13 +2,14 @@
 
 
 /* 11 DOM Contentnt Loaded Event =========================
+*/
 document.addEventListener('DOMContentLoaded',function(){
 	alert('yuklendi');
 })
 
-*/
 
 /* 10 Tabbed Content========================= 
+*/
 var tabs = document.querySelector('.tabs');
 //console.log(tabs);
 var panels = document.querySelectorAll('.panel');
@@ -51,11 +52,11 @@ tabs.addEventListener('click', (e) => {
 });
 //ninja did=-=-=-=-=-=-=-=
 
-*/
 
 
 
 /* 09 Custom Search Filter=========================
+*/
 const list = document.querySelector('#book-list ul');
 
 const searchBar = document.forms['search-books'].querySelector('input');
@@ -75,11 +76,11 @@ searchBar.addEventListener('keyup',function(e){
 
 })
 
-*/
 
 
 
 /* 08 Checkbox and Change Events.=========================
+*/
 var check = document.createElement('input');
 check.type = "Checkbox";
 check.setAttribute('id', 'hide')
@@ -105,9 +106,9 @@ hide.addEventListener('change', function(e){
 	}
 })
 
-*/
 
 /* 08 Attributes.=========================
+*/
 var book = document.querySelector('li:first-Child .name');
 console.log(book);
 console.log(book.getAttribute('class')); //output ->//set again'name'
@@ -125,11 +126,11 @@ console.log(link.hasAttribute('href')); //false
 link.setAttribute('href', 'http://www.128kb.com'); 
 console.log(link.hasAttribute('href')); //true
 
-*/
 
 
 
 /* 07 Reacting Forms.=========================
+*/
 
 var list = document.querySelector('#book-list ul');
 //Delete Books
@@ -168,9 +169,9 @@ var addForm = document.forms['add-book'];
 		addForm.querySelector('input[type = "text"]').value = '';
 
 });
-*/
 
 /* 06 Event Bubling =========================
+*/
 //Asagidaki remove List Item ile ayni isi yapacak, farkli bir sekilde.
 //farki dinamik olarak yeni li ogeleri eklense bile
 //ul icinden tetiklenecek olay olay kaynaginin ebeveyni li 
@@ -183,10 +184,10 @@ const list = document.querySelector('#book-list ul');
 		li.parentElement.removeChild(li);
 	}
 })
-*/
 
 
 /* 05 Dom Events =========================
+*/
 const link = document.querySelector('#page-banner a');
 link.addEventListener('click',function(e){
 	e.preventDefault();
@@ -211,18 +212,18 @@ console.log(e.target);
 console.log(e);
 })
 
-*/
 
 /*04 traversing the DOM =========================
+*/
 var bookList = document.querySelector('#book-list');
 console.log('The parent Node is: ', bookList.parentNode);
 console.log('The parent Element is: ', bookList.parentElement);
 console.log('The parent Element ID is: ', bookList.parentElement.id);
 console.log('The parent Elements parent Element is: ', bookList.parentElement.parentElement);
 console.log(bookList.childNodes);
-*/
 
 /*03 nodes =========================
+*/
 
 const banner = document.querySelector('#page-banner');
 console.log('#page-banner \'s node type is: ' + banner.nodeType); 
@@ -236,9 +237,9 @@ console.log(clonedBanner);
 clonedBanner = banner.cloneNode(true); // include child nodes.
 console.log(clonedBanner);
 
-*/
 
 /* 02 =========================
+*/
 const w = document.querySelector('#book-list li .name ');
 console.log(w);
 books = document.querySelectorAll('#book-list li .name');
@@ -256,10 +257,10 @@ Array.from(books).forEach( function(element, index) {
 	console.log(element.textContent = 'Kitap Adi: ' + element.textContent);
 });
 
-*/
 
 
 /* 01 =========================
+*/
 var titles = document.getElementsByClassName('title');
 //titles is a collection. so array methods ll not gonna work.
 //so convert it an array as ==> Array.from(titles)
@@ -267,4 +268,3 @@ Array.from(titles).forEach( function(element, index) {
 	console.log(index + ': ' + element);
 	console.log(element)
 });
-*/
